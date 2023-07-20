@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment center</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="paymentTwo.css">
+    <meta name="description" content="This is the payment site">
+</head>
+<body>
+    <header>
+        <h1>Pay to through the following</h1>
+        <p id="closer">You are one step closer to watching</p>
+    </header>
+    <ul>
+        <li>
+            <a href="#">Transfer</a>
+            <div class="rest">
+                <h3>Transfer</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>GT Bank</th>
+                            <th>Access</th>
+                            <th>Opay</th>
+                        </tr>
+                        <tbody>
+                            <tr>
+                                <td>Akerele Taiwo David</td>
+                                <td>Akerele Taiwo David</td>
+                                <td>Akerele Taiwo David</td>
+                            </tr>
+                            <tr>
+                                <td>9162855174</td>
+                                <td>1469573614</td>
+                                <td>9162855174</td>
+                            </tr>
+                            
+                        </tbody>
+                    </thead>
+                </table>
+                <a href="receit.html" id="recit">
+                    <button type="submit" id="submitDetail">Send the receit</button>
+                </a>
+            </div>
+        </li>
+        <li>
+            <a href="#">Debit card</a>
+            <div class="rest">
+                <h3>Debit Card</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name on the card:</td>
+                            <td>
+                                <input type="text" id="name" name="name" placeholder="name on the card" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Number On the card:</td>
+                            <td>
+                                <input type="number" id="number" name="number" placeholder="Number on the card" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Expiry date:</td>
+                            <td>
+                                <input type="number" id="numberTwo" name="numberTwo" placeholder="02/2022" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>CVV:</td>
+                            <td>
+                                <input type="number" id="numberThree" name="numberThree" placeholder="cvv" maxlength="3" required>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="confirmation.html" id="confirm">
+                    <button type="submit" id="submitDetails">Pay</button>
+                </a>
+                
+            </div>
+        </li>
+    </ul>
+
+    <script src="payment.js"></script>
+</body>
+</html>

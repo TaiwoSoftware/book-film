@@ -1,0 +1,157 @@
+header {
+    background-image: url(icon/love.jpeg);
+    padding: 7rem;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+header a {
+    text-decoration: none;
+    font-weight: 800;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {}
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+h1 {
+    animation: moveFromBottom 4s;
+    text-transform: uppercase;
+    color: #f08503;
+    text-align: center;
+    font-size: 2rem;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+h1:hover {
+    text-decoration: underline;
+    color: rgb(146, 107, 57);
+}
+
+/* grid system */
+h2 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.films {
+    padding: 2rem;
+}
+
+.row1 {
+    animation: moveFromTop 2s;
+}
+
+.row2 {
+    animation: moveFromBottom 2s;
+}
+
+.row3 {
+    animation: moveFromTop 2s;
+}
+
+.row4 {
+    animation: moveFromBottom 2s;
+}
+
+.row5 {
+    animation: moveFromTop 2s;
+}
+
+.row {
+    margin-right: -10px;
+    box-sizing: border-box;
+}
+
+.col {
+    float: left;
+    width: 100%;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.col-md-4 {
+    width: 25%;
+}
+
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.row:after,
+.group:after {
+    clear: both;
+}
+
+.row,
+.group {
+    zoom: 1;
+}
+
+/* grid-system */
